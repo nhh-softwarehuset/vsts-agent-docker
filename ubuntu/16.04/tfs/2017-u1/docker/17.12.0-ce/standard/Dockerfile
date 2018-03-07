@@ -11,5 +11,6 @@ RUN set -x \
 
 COPY ./start.sh .
 RUN chmod +x start.sh
+RUN chmod -R g+w /vsts
 
 CMD ["./start.sh"]
